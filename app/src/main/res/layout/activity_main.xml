@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:id="@+id/dad-burger-image"
+        android:layout_width="338dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topbun" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="187dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="407dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dad-burger-image" >
+
+        <RadioGroup
+            android:id="@+id/patty-radio-group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_beef-patty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/beef_patty" />
+
+            <RadioButton
+                android:id="@+id/rb_lamb-patty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lamb_patty" />
+
+            <RadioButton
+                android:id="@+id/rb_ostrich-patty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ostrich_patty" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cb_proscuitto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/proscuitto" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/RadioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rb_radio-group">
+
+        <RadioButton
+            android:id="@+id/rb_cheddar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:text="@string/Cheddar"
+            android:textAlignment="center" />
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/rb_provolone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="88dp"
+        android:text="@string/Provolone"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/radio-group2"
+        app:layout_constraintTop_toBottomOf="@+id/rb_radio-group" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="264dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio-group2" />
+
+    <TextView
+        android:id="@+id/tv_sauce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="189dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="184dp"
+        android:text="@string/Sauce"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rb_radio-group" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="428dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:srcCompat="@drawable/bottombun" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

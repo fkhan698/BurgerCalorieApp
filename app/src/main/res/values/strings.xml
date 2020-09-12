@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BurgerCalorieApp</string>
+    <string name="beef_patty">Beef Patty</string>
+    <string name="lamb_patty">Lamb Patty </string>
+    <string name="ostrich_patty">Ostrich Patty</string>
+    <string name="proscuitto">Prosciutto</string>
+    <string name="cheddar">cheddar</string>
+    <string name="provolone">provolone</string>
+    <string name="Cheddar">Cheddar</string>
+    <string name="Provolone">Provolone</string>
+    <string name="Sauce">Sauce</string>
+</resources>
