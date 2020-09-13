@@ -13,9 +13,10 @@
         android:layout_width="338dp"
         android:layout_height="152dp"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="37dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/topbun" />
@@ -59,85 +60,81 @@
 
         <CheckBox
             android:id="@+id/cb_proscuitto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/proscuitto" />
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/RadioGroup2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="21dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_radio-group">
-
-        <RadioButton
-            android:id="@+id/rb_cheddar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="0dp"
-            android:gravity="center"
-            android:text="@string/Cheddar"
-            android:textAlignment="center" />
+            android:layout_width="135dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="52dp"
+            android:text="@string/proscuitto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/patty-radio-group" />
 
     </RadioGroup>
 
     <RadioButton
-        android:id="@+id/rb_provolone"
+        android:id="@+id/RadioGroup2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="67dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="33dp"
         android:text="@string/Provolone"
         android:textAlignment="viewStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/radio-group2"
-        app:layout_constraintTop_toBottomOf="@+id/rb_radio-group" />
+        app:layout_constraintEnd_toStartOf="@+id/RadioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
 
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="264dp"
         android:layout_height="53dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="47dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_sauce"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radio-group2" />
+        app:layout_constraintTop_toBottomOf="@+id/RadioGroup2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tv_sauce"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="189dp"
-        android:layout_marginTop="124dp"
-        android:layout_marginEnd="184dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="50dp"
         android:text="@string/Sauce"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rb_radio-group" />
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="428dp"
-        android:layout_height="162dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="353dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar"
         app:srcCompat="@drawable/bottombun" />
+
+    <RadioButton
+        android:id="@+id/RadioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:text="Asiago"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintStart_toEndOf="@+id/RadioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

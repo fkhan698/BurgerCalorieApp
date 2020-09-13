@@ -40,5 +40,7 @@ public class Burger {
     }
 
 
-
+    public void clearProsciuttoCalories() {
+        mProscuittoCal = 0;
+    }
 }
