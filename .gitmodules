@@ -1,0 +1,3 @@
+[submodule "mobile-application-development"]
+	path = mobile-application-development
+	url = https://github.com/fkhan698/mobile-application-development.git
